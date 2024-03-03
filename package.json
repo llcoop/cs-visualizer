@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
+  "author": "Logan Cooper",
+  "license": "ISC",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --config webpack.config.js --mode production",
     "watch": "webpack --watch",
     "test": "cross-env BABEL_ENV=test jest",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "eslint",
+    "prepare": "husky install"
   },
-  "author": "Logan Cooper",
-  "license": "ISC",
+  "lint-staged": {
+    "*.{jsx?}": [
+      "prettier --write",
+      "eslint --fix ."
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

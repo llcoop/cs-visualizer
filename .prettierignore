@@ -1,7 +1,15 @@
-# Archive
-archive/
+# Builds
+build/
+dist/
+
+# Configs
+.eslintrc.js
+.prettierrc.js
 
 # Dependencies
 node_modules/
-.husky/
+package.json
 package-lock.json
+
+# Misc
+.husky/
