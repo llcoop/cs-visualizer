@@ -1,12 +1,14 @@
 {
-  "name": "client",
+  "name": "cs-visualizer",
   "version": "1.0.0",
-  "description": "Client (React) code",
+  "description": "",
   "main": "index.jsx",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --config webpack.config.js --mode production",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "test": "cross-env BABEL_ENV=test jest",
+    "format": "prettier --write ."
   },
   "author": "Logan Cooper",
   "license": "ISC",
@@ -18,26 +20,32 @@
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.23.10",
     "@babel/plugin-transform-runtime": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
     "@babel/preset-react": "^7.18.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^9.0.11",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
+    "lint-staged": "^15.2.2",
     "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "^3.2.5",
     "sass": "^1.55.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }

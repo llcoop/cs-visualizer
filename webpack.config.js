@@ -1,12 +1,9 @@
 "use strict";
+
 const path = require("path"),
 	HtmlWebpackPlugin = require("html-webpack-plugin"),
 	MiniCssExtractPlugin = require("mini-css-extract-plugin"),
 	CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-
-// Get the .env
-//const envPath = path.join(__dirname, "..", ".env");
-//require("dotenv").config({ path: envPath });
 
 // Build paths
 const entry = path.join(__dirname, "src", "index.jsx");
