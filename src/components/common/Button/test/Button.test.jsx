@@ -1,6 +1,5 @@
 import { Suspense } from "react";
-import { cleanup, render, fireEvent, expect } from "@testing-library/react";
-
+import { render, screen, fireEvent } from "@testing-library/react";
 import Button from "../Button";
 
 const mockOnClick = jest.fn();
