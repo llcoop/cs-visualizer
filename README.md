@@ -1,4 +1,5 @@
-# Client Code
+# cs-visualizer
+Visualizer for common algorithms and data structures used in Computer Science
 
 ## Quick Start
 
