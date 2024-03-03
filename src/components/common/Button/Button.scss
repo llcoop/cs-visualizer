@@ -1,0 +1,18 @@
+.button {
+  padding: 0.2rem;
+  border: none;
+  border-radius: 2px;
+  width: 4rem;
+  height: 1.5rem;
+  background-color: red;
+  box-shadow: 1px 1px 1px gray;
+  color: white;
+}
+
+.button:hover {
+  background-color: tomato;
+}
+
+.button:active {
+  background-color: crimson;
+}

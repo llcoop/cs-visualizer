@@ -1,0 +1,18 @@
+# Builds
+build/
+dist/
+
+# Cache
+.eslintcache
+
+# Dependencies
+node_modules/
+.husky/_
+#package-lock.json
+
+# IDE
+*.code-workspace
+
+# Logs
+logs
+*.log

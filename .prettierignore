@@ -1,0 +1,7 @@
+# Archive
+archive/
+
+# Dependencies
+node_modules/
+.husky/
+package-lock.json
